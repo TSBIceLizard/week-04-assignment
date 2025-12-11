@@ -18,20 +18,20 @@ h1 {
 
 h2 {
   color: antiquewhite;
-  margin-left: 192px;
+  margin-left: 6em;
   margin-top: 12px;
 }
 
 form {
   /* margin: 64px; */
-  margin-left: 64px;
+  margin-left: 8em;
   padding: 28px;
 }
 
 button {
   margin: 8px;
   padding: 4px;
-  margin-left: 0.25em;
+  margin-left: 2em;
 }
 
 fieldset {
