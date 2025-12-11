@@ -24,15 +24,12 @@
 const guestbookForm = document.getElementById("guest-book-form");
 console.log(guestBookForm);
 
-function handleGuestSubmit(event) {
+async function handleGuestSubmit(event) {
   event.preventDefault();
   const formDataTemplate = new FormData(guestbookForm);
   const formValues = Object.fromEntries(formDataTemplate);
   console.log(formValues);
-  //TODO: send the data in a request to the server
-  // We'll use the URL where our server is located! http://localhost:8080/new-staff temporarily (make sure that you are fetching the specific POST route that you are requesting data)
-  // We'll use fetch to connect our client <---> server!
-  fetch("http://localhost:8080/new-staff", {
+  await fetch("http://localhost:8080/guestbook", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
