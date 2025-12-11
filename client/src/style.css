@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   color: antiquewhite;
-  margin-left: 96px;
+  margin-left: 192px;
   margin-top: 12px;
 }
 
@@ -35,10 +35,10 @@ button {
 }
 
 fieldset {
-  margin: 12px;
+  margin: 4px;
   padding: 6px;
-  margin-left: 32px;
-  margin-right: 256px;
+  margin-left: 8em;
+  margin-right: 8em;
   label {
     margin: 0.25em;
     padding: 0.125em;
