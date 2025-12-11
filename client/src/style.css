@@ -1,1 +1,24 @@
 /* Must be a responsive design with decent accessibility */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkslategray;
+  color: antiquewhite;
+}
+
+h1 {
+  color: antiquewhite;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+h2 {
+  color: antiquewhite;
+  margin-left: 10px;
+  margin-top: 12px;
+  margin-bottom: 8;
+}
