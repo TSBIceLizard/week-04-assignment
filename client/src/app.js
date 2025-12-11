@@ -22,14 +22,14 @@
 // Render the data using DOM elements like normal! (One per piece of data)
 
 const guestbookForm = document.getElementById("guest-book-form");
-console.log(guestBookForm);
+console.log(guestbookForm);
 
-async function handleGuestSubmit(event) {
+function handleGuestSubmit(event) {
   event.preventDefault();
   const formDataTemplate = new FormData(guestbookForm);
   const formValues = Object.fromEntries(formDataTemplate);
   console.log(formValues);
-  await fetch("https://week-04-assignment-gybp.onrender.com:8080/guestbook", {
+  fetch("https://week-04-assignment-gybp.onrender.com:8080/guestbook", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
