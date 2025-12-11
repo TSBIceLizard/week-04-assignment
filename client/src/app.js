@@ -29,7 +29,7 @@ async function handleGuestSubmit(event) {
   const formDataTemplate = new FormData(guestbookForm);
   const formValues = Object.fromEntries(formDataTemplate);
   console.log(formValues);
-  await fetch("https://week-04-assignment-gybp.onrender.com/guestbook", {
+  await fetch("https://week-04-assignment-gybp.onrender.com:8080/guestbook", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -39,3 +39,6 @@ async function handleGuestSubmit(event) {
 }
 
 guestbookForm.addEventListener("submit", handleGuestSubmit);
+
+//================================================
+// Getting guestbook messages from the database!
