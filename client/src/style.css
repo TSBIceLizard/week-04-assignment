@@ -22,3 +22,18 @@ h2 {
   margin-top: 12px;
   margin-bottom: 8;
 }
+
+fieldset {
+  margin: 12px;
+  padding: 6px;
+  margin-left: 32px;
+  margin-right: 256px;
+  label {
+    margin: 0.25em;
+    padding: 0.125em;
+  }
+  input {
+    margin: 0.25em;
+    padding: 0.125em;
+  }
+}

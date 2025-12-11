@@ -29,7 +29,7 @@ async function handleGuestSubmit(event) {
   const formDataTemplate = new FormData(guestbookForm);
   const formValues = Object.fromEntries(formDataTemplate);
   console.log(formValues);
-  await fetch("http://localhost:8080/guestbook", {
+  await fetch("https://week-04-assignment-1-plpd.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
