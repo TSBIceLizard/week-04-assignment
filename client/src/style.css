@@ -24,8 +24,14 @@ h2 {
 }
 
 form {
-  margin: 16px;
-  padding: 8px;
+  margin: 64px;
+  padding: 28px;
+}
+
+button {
+  margin: 8px;
+  padding: 4px;
+  margin-left: 0.25em;
 }
 
 fieldset {
