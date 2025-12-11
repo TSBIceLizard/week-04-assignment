@@ -23,6 +23,11 @@ h2 {
   margin-bottom: 8;
 }
 
+form {
+  margin: 16px;
+  padding: 8px;
+}
+
 fieldset {
   margin: 12px;
   padding: 6px;
