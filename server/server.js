@@ -39,3 +39,13 @@ app.post("/guestbook", (req, res) => {
 
   res.json({ status: "success", values: newGuestBookEntry });
 });
+
+//================================
+// Get the last 8 added guestbook comments
+
+app.get("/guestbookread", async function (req, res) {
+  const guestBookGet = await db.query(
+    `SELECT * FROM guestbook FETCH LAST 8 ROWS ONLY`
+  );
+  res.json(guestBookGet.rows);
+});

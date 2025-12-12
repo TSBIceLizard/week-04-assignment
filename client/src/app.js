@@ -42,3 +42,83 @@ guestbookForm.addEventListener("submit", handleGuestSubmit);
 
 //================================================
 // Getting guestbook messages from the database!
+
+const guestBookContent = document.getElementById("guestbook-content");
+const guestBookMessage1 = document.createElement("p");
+const guestBookMessage2 = document.createElement("p");
+const guestBookMessage3 = document.createElement("p");
+const guestBookMessage4 = document.createElement("p");
+const guestBookMessage5 = document.createElement("p");
+const guestBookMessage6 = document.createElement("p");
+const guestBookMessage7 = document.createElement("p");
+const guestBookMessage8 = document.createElement("p");
+
+let guestBookMsgQueue = [
+  {
+    idOrder: 1,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 2,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 3,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 4,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 5,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 6,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 7,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+  {
+    idOrder: 8,
+    firstname: "",
+    surname: "",
+    rating: 0,
+    comment: "",
+  },
+];
+
+//================================================
+// Generate the guestbook
+
+async function handleGrabGuestBook() {
+  const response = await fetch(
+    "https://week-04-assignment-gybp.onrender.com/guestbookread"
+  );
+  const loadGuestBook = await response.json();
+  console.log(`Guestbook is loaded? ${loadGuestBook}`);
+}
