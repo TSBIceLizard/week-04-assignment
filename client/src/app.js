@@ -1,25 +1,4 @@
-//TODO: Collect user data from the HTML form and send it to the DB!
-
-//submit event to collect users' data
-
-//fetch the POST server route
-
-// fetch("url", {
-//     method:,
-//     headers: {
-
-//     },
-//     body: JSON.stringify()
-// })
-
-//! Once you finish your project, replace your localhost url with the deployed server URL from Render!!!
 //=================================
-
-//TODO: Display guest data (left messages) on the guestbook interface!
-
-//fetch the GET route from the server
-
-// Render the data using DOM elements like normal! (One per piece of data)
 
 const guestbookForm = document.getElementById("guest-book-form");
 console.log(guestbookForm);
@@ -378,28 +357,6 @@ async function handleGrabGuestBook() {
       msgContent: messageBlock[0].placeMessage(),
     },
   ];
-
-  //   const guestBookMessage1a = `By ${guestBookMsgQueue[7].firstname} ${guestBookMsgQueue[7].surname} who rated us as ${guestBookMsgQueue[7].rating}!`;
-  //   const guestBookMessage2a = `By ${guestBookMsgQueue[6].firstname} ${guestBookMsgQueue[6].surname} who rated us as ${guestBookMsgQueue[6].rating}!`;
-  //   const guestBookMessage3a = `By ${guestBookMsgQueue[5].firstname} ${guestBookMsgQueue[5].surname} who rated us as ${guestBookMsgQueue[5].rating}!`;
-  //   const guestBookMessage4a = `By ${guestBookMsgQueue[4].firstname} ${guestBookMsgQueue[4].surname} who rated us as ${guestBookMsgQueue[4].rating}!`;
-  //   const guestBookMessage5a = `By ${guestBookMsgQueue[3].firstname} ${guestBookMsgQueue[3].surname} who rated us as ${guestBookMsgQueue[3].rating}!`;
-  //   const guestBookMessage6a = `By ${guestBookMsgQueue[2].firstname} ${guestBookMsgQueue[2].surname} who rated us as ${guestBookMsgQueue[2].rating}!`;
-  //   const guestBookMessage7a = `By ${guestBookMsgQueue[1].firstname} ${guestBookMsgQueue[1].surname} who rated us as ${guestBookMsgQueue[1].rating}!`;
-  //   const guestBookMessage8a = `By ${guestBookMsgQueue[0].firstname} ${guestBookMsgQueue[0].surname} who rated us as ${guestBookMsgQueue[0].rating}!`;
-
-  //   guestBookContent.appendChild(guestBookMessage1);
-  //   guestBookContent.appendChild(guestBookMessage2);
-  //   guestBookContent.appendChild(guestBookMessage3);
-  //   guestBookContent.appendChild(guestBookMessage4);
-  //   guestBookMessage1.textContent = guestBookMsgQueue[0].comment;
-  //   guestBookMessage1.class = "guest-book-message";
-  //   guestBookMessage2.textContent = guestBookMsgQueue[1].comment;
-  //   guestBookMessage2.class = "guest-book-message";
-  //   guestBookMessage3.textContent = guestBookMsgQueue[2].comment;
-  //   guestBookMessage3.class = "guest-book-message";
-  //   guestBookMessage4.textContent = guestBookMsgQueue[3].comment;
-  //   guestBookMessage4.class = "guest-book-message";
 }
 
 handleGrabGuestBook();
