@@ -50,7 +50,24 @@ fieldset {
   }
 }
 
-/* .msg-box {
-  width: 768px;
-  height: 128px;
+#guestbook-content {
+  margin-left: 16em;
+  margin-right: 16em;
+  padding: 12px;
+  div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+  }
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.125em;
+  }
+}
+
+/* #author-header-1 {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 0.5em;
 } */
