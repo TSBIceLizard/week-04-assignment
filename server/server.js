@@ -47,5 +47,5 @@ app.get("/guestbookread", async function (req, res) {
   const guestBookGet = await db.query(
     `SELECT * FROM guestbook FETCH LAST 8 ROWS ONLY`
   );
-  res.json(guestBookGet.rows);
+  res.json({ status: "success", values: guestBookGet.rows });
 });
