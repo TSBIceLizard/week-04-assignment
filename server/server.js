@@ -47,6 +47,6 @@ app.get("/guestbookread", async function (req, res) {
   const guestBookGet = await db.query(
     `SELECT * FROM guestbook ORDER BY id DESC LIMIT 8;`
   );
-  res.json(guestBookGet.rows);
   console.log(guestBookGet);
+  res.json(guestBookGet.rows);
 });
