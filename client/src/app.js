@@ -122,3 +122,5 @@ async function handleGrabGuestBook() {
   const loadGuestBook = await response.json();
   console.log(`Guestbook is loaded? ${loadGuestBook}`);
 }
+
+handleGrabGuestBook();
