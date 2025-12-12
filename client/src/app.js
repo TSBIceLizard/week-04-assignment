@@ -53,65 +53,6 @@ const guestBookMessage6 = document.createElement("p");
 const guestBookMessage7 = document.createElement("p");
 const guestBookMessage8 = document.createElement("p");
 
-let guestBookMsgQueue = [
-  {
-    idOrder: 1,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 2,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 3,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 4,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 5,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 6,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 7,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-  {
-    idOrder: 8,
-    firstname: "",
-    surname: "",
-    rating: 0,
-    comment: "",
-  },
-];
-
 //================================================
 // Generate the guestbook
 
@@ -120,7 +61,66 @@ async function handleGrabGuestBook() {
     "https://week-04-assignment-gybp.onrender.com/guestbookread"
   );
   const loadGuestBook = await response.json();
-  console.log(`Guestbook is loaded? ${loadGuestBook}`);
+  let guestBookParsed = JSON.parse(loadGuestBook);
+  console.log(`Guestbook is loaded? ${guestBookParsed}`);
+  let guestBookMsgQueue = [
+    {
+      idOrder: 1,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 2,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 3,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 4,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 5,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 6,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 7,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+    {
+      idOrder: 8,
+      firstname: "",
+      surname: "",
+      rating: 0,
+      comment: "",
+    },
+  ];
 }
 
 handleGrabGuestBook();
